@@ -2,7 +2,7 @@ import { Car, Clock } from "lucide-react"
 
 export default function ConnectionSection() {
   return (
-    <section className="bg-[#fdfaf5] px-4 md:px-12 lg:px-20">
+    <section className="bg-[#f5eee5] px-4 md:px-12 lg:px-20">
       <div className="grid lg:grid-cols-2 gap-10 items-center">
         {/* Ảnh bản đồ bên trái */}
         <div className="rounded-2xl overflow-hidden">

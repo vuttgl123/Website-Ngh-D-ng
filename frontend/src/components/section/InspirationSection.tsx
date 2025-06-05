@@ -1,9 +1,19 @@
+import { motion } from "framer-motion";
+import { slideRight, slideLeft } from "../../utils/animations"; // Đường dẫn tùy dự án
+
 export default function InspirationSection() {
   return (
-    <section className="bg-[#fdfaf5] px-4 md:px-8 lg:px-20">
+    <section className="bg-[#f5eee5] px-4 md:px-8 lg:px-20">
       <div className="grid lg:grid-cols-2 gap-10 items-stretch">
-        {/* Ảnh bên trái */}
-        <div className="relative overflow-hidden rounded-2xl shadow-lg group h-full max-h-[520px]">
+
+        {/* Ảnh bên trái - trái sang phải */}
+        <motion.div
+          variants={slideRight}
+          initial="initial"
+          whileInView="animate"
+          viewport={{ once: true, amount: 0.2 }}
+          className="relative overflow-hidden rounded-2xl shadow-lg group h-full max-h-[520px]"
+        >
           <img
             src="https://booking.mocchaugroup.com.vn/wp-content/uploads/2024/05/ooo-992x800.jpg"
             alt="Moc Chau Island"
@@ -13,34 +23,36 @@ export default function InspirationSection() {
             <span className="text-3xl leading-none">“</span>
             <span>Ánh sáng chan hòa</span>
           </div>
-        </div>
+        </motion.div>
 
-        {/* Nội dung bên phải */}
-        <div className="border border-green-300 border-dashed rounded-2xl p-8 flex flex-col h-full max-h-[520px]">
+        {/* Nội dung bên phải - phải sang trái */}
+        <motion.div
+          variants={slideLeft}
+          initial="initial"
+          whileInView="animate"
+          viewport={{ once: true, amount: 0.2 }}
+          className="border border-green-300 border-dashed rounded-2xl p-8 flex flex-col h-full max-h-[520px]"
+        >
           <h2
             className="text-green-700 text-3xl lg:text-4xl mb-6 leading-tight"
             style={{ fontFamily: "'Dancing Script', cursive" }}
           >
             Nguồn cảm hứng từ những giá trị vượt thời gian
           </h2>
-         <div className="text-xs md:text-sm lg:text-base text-gray-800 space-y-4 leading-normal">
+          <div className="text-xs md:text-sm lg:text-base text-gray-800 space-y-4 leading-normal">
             <p>
               Mộc Châu Group – giống như một người dân bản địa hiếu khách – là cầu nối gìn giữ vẻ đẹp thiên nhiên,
-              bảo tồn bản sắc địa phương song hành cùng sáng tạo và phát triển những tiện nghi hiện đại. Chúng tôi luôn
-              rộng mở chào đón bạn đến với thế giới trải nghiệm đầy màu sắc, đầy tính phiêu lưu độc đáo nhất.
+              bảo tồn bản sắc địa phương song hành cùng sáng tạo và phát triển những tiện nghi hiện đại...
             </p>
             <p>
-              Không chỉ dừng lại ở cảnh đẹp, hay giải trí đơn thuần, Mộc Châu Group mang đến cho du khách trải nghiệm thật sự giá trị
-              bằng hành trình khai phóng trọn vẹn các cung bậc cảm xúc nơi ốc đảo Mộc Châu Island và thiên nhiên kỳ vĩ,
-              huyền ảo của đại ngàn Tây Bắc.
+              Không chỉ dừng lại ở cảnh đẹp, hay giải trí đơn thuần, Mộc Châu Group mang đến cho du khách trải nghiệm thật sự giá trị...
             </p>
             <p>
-              Đồng hành với mọi thăng – trầm từ sâu trong tâm hồn, Mộc Châu Group như “chiếc nôi” ôm ấp và nâng niu mọi cung bậc cảm xúc của bạn:
-              hồi hộp trước mỗi trò chơi mạo hiểm, choáng ngợp trước thiên nhiên hùng vĩ, tĩnh tại trước không gian yên bình…
+              Đồng hành với mọi thăng – trầm từ sâu trong tâm hồn, Mộc Châu Group như “chiếc nôi” ôm ấp và nâng niu...
             </p>
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
-  )
+  );
 }

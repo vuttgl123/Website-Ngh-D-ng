@@ -1,6 +1,6 @@
 export default function IntroHeading() {
   return (
-    <div className="bg-[#fdfaf5] py-12 px-4 text-center">
+    <div className="bg-[#f5eee5] py-12 px-4 text-center">
       <h1
         className="text-green-700 text-7xl md:text-7xl font-normal"
         style={{ fontFamily: "'Dancing Script', cursive" }}

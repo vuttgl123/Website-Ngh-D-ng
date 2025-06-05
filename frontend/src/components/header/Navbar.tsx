@@ -61,13 +61,13 @@ export default function Navbar() {
                 </DropdownMenuTrigger>
                 <DropdownMenuContent
                   align="center"
-                  className="mt-2 rounded-2xl border border-gray-200 shadow-xl bg-white px-3 py-2 w-[200px] z-50"
+                  className="mt-3 w-[200px] rounded-2xl border border-gray-200 bg-white shadow-lg p-2 z-50"
                 >
                   {item.children.map((child, cIndex) => (
                     <DropdownMenuItem
                       key={cIndex}
                       asChild
-                      className="text-sm px-3 py-2 rounded-md hover:bg-green-50 hover:text-green-700 transition-colors cursor-pointer"
+                      className="w-full px-4 py-2 text-sm rounded-lg hover:bg-green-100/50 hover:text-green-700 transition-all cursor-pointer"
                     >
                       <a href={child.href} className="block w-full">
                         {child.label}
