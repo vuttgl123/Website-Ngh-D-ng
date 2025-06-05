@@ -48,7 +48,7 @@ const navItems = [
 
 export default function Navbar() {
   return (
-    <nav className="relative flex items-center justify-end w-full pr-6 text-base font-semibold text-black">
+    <nav className="relative flex items-center justify-end w-full pr-6 text-lg font-semibold text-black">
       <ul className="flex gap-8">
         {navItems.map((item, index) => (
           <li key={index} className="relative">
