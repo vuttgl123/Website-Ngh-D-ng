@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { slideRight, slideLeft } from "../../utils/animations";
+import { slideRight, slideLeft } from "../../../utils/animations";
 
 export default function MocChauIslandSection() {
   return (

@@ -2,7 +2,7 @@ import Header from './components/header/Header'
 import Banner from "./components/banner/Banner"
 import Section from './components/section/Section'
 import Footer from './components/footer/Footer'
-import WaveTop from './components/WaveTop'
+import WaveTop from './utils/WaveTop'
 
 function App() {
   return (

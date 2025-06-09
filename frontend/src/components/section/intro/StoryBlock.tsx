@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { slideRight, slideLeft } from "../../utils/animations"; // Đường dẫn tùy dự án
+import { slideRight, slideLeft } from "../../../utils/animations"; // Đường dẫn tùy dự án
 
 export default function InspirationSection() {
   return (
@@ -31,7 +31,7 @@ export default function InspirationSection() {
           initial="initial"
           whileInView="animate"
           viewport={{ once: true, amount: 0.2 }}
-          className="border border-green-300 border-dashed rounded-2xl p-8 flex flex-col h-full max-h-[520px]"
+          className="border border-green-900 border-dashed rounded-2xl p-8 flex flex-col h-full max-h-[520px]"
         >
           <h2
             className="text-green-700 text-3xl lg:text-4xl mb-6 leading-tight"
